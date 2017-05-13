@@ -12,7 +12,59 @@
 		8B7191B11EC6B3EA0071DD7A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B7191AF1EC6B3EA0071DD7A /* Main.storyboard */; };
 		8B7191B31EC6B3EA0071DD7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B7191B21EC6B3EA0071DD7A /* Assets.xcassets */; };
 		8B7191B61EC6B3EA0071DD7A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B7191B41EC6B3EA0071DD7A /* LaunchScreen.storyboard */; };
+		8B7191C31EC6B42A0071DD7A /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B7191C11EC6B42A0071DD7A /* Interface.storyboard */; };
+		8B7191C51EC6B42A0071DD7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B7191C41EC6B42A0071DD7A /* Assets.xcassets */; };
+		8B7191CC1EC6B42A0071DD7A /* Mobile-Day-Impacta-Watch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 8B7191CB1EC6B42A0071DD7A /* Mobile-Day-Impacta-Watch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		8B7191D31EC6B42A0071DD7A /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7191D21EC6B42A0071DD7A /* InterfaceController.swift */; };
+		8B7191D51EC6B42A0071DD7A /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7191D41EC6B42A0071DD7A /* ExtensionDelegate.swift */; };
+		8B7191D71EC6B42A0071DD7A /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7191D61EC6B42A0071DD7A /* NotificationController.swift */; };
+		8B7191D91EC6B42A0071DD7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B7191D81EC6B42A0071DD7A /* Assets.xcassets */; };
+		8B7191DD1EC6B42A0071DD7A /* Mobile-Day-Impacta-Watch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 8B7191BF1EC6B42A0071DD7A /* Mobile-Day-Impacta-Watch.app */; };
+		8B7191E81EC70B270071DD7A /* WatchConnectivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B7191E71EC70B270071DD7A /* WatchConnectivity.framework */; };
+		8B7191EA1EC70B3B0071DD7A /* WatchConnectivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B7191E91EC70B3B0071DD7A /* WatchConnectivity.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8B7191CD1EC6B42A0071DD7A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8B7191A01EC6B3EA0071DD7A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8B7191CA1EC6B42A0071DD7A;
+			remoteInfo = "Mobile-Day-Impacta-Watch Extension";
+		};
+		8B7191DB1EC6B42A0071DD7A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8B7191A01EC6B3EA0071DD7A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8B7191BE1EC6B42A0071DD7A;
+			remoteInfo = "Mobile-Day-Impacta-Watch";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8B7191E11EC6B42A0071DD7A /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				8B7191CC1EC6B42A0071DD7A /* Mobile-Day-Impacta-Watch Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B7191E51EC6B42A0071DD7A /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				8B7191DD1EC6B42A0071DD7A /* Mobile-Day-Impacta-Watch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		8B7191A81EC6B3EA0071DD7A /* Mobile-Day-Impacta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mobile-Day-Impacta.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,6 +74,19 @@
 		8B7191B21EC6B3EA0071DD7A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8B7191B51EC6B3EA0071DD7A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8B7191B71EC6B3EA0071DD7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8B7191BF1EC6B42A0071DD7A /* Mobile-Day-Impacta-Watch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mobile-Day-Impacta-Watch.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B7191C21EC6B42A0071DD7A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		8B7191C41EC6B42A0071DD7A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8B7191C61EC6B42A0071DD7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8B7191CB1EC6B42A0071DD7A /* Mobile-Day-Impacta-Watch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Mobile-Day-Impacta-Watch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B7191D11EC6B42A0071DD7A /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		8B7191D21EC6B42A0071DD7A /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		8B7191D41EC6B42A0071DD7A /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		8B7191D61EC6B42A0071DD7A /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		8B7191D81EC6B42A0071DD7A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8B7191DA1EC6B42A0071DD7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8B7191E71EC70B270071DD7A /* WatchConnectivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WatchConnectivity.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS3.1.sdk/System/Library/Frameworks/WatchConnectivity.framework; sourceTree = DEVELOPER_DIR; };
+		8B7191E91EC70B3B0071DD7A /* WatchConnectivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WatchConnectivity.framework; path = System/Library/Frameworks/WatchConnectivity.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +94,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B7191EA1EC70B3B0071DD7A /* WatchConnectivity.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B7191C81EC6B42A0071DD7A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B7191E81EC70B270071DD7A /* WatchConnectivity.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -39,7 +113,10 @@
 			isa = PBXGroup;
 			children = (
 				8B7191AA1EC6B3EA0071DD7A /* Mobile-Day-Impacta */,
+				8B7191C01EC6B42A0071DD7A /* Mobile-Day-Impacta-Watch */,
+				8B7191CF1EC6B42A0071DD7A /* Mobile-Day-Impacta-Watch Extension */,
 				8B7191A91EC6B3EA0071DD7A /* Products */,
+				8B7191E61EC70B260071DD7A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -47,6 +124,8 @@
 			isa = PBXGroup;
 			children = (
 				8B7191A81EC6B3EA0071DD7A /* Mobile-Day-Impacta.app */,
+				8B7191BF1EC6B42A0071DD7A /* Mobile-Day-Impacta-Watch.app */,
+				8B7191CB1EC6B42A0071DD7A /* Mobile-Day-Impacta-Watch Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -64,6 +143,46 @@
 			path = "Mobile-Day-Impacta";
 			sourceTree = "<group>";
 		};
+		8B7191C01EC6B42A0071DD7A /* Mobile-Day-Impacta-Watch */ = {
+			isa = PBXGroup;
+			children = (
+				8B7191C11EC6B42A0071DD7A /* Interface.storyboard */,
+				8B7191C41EC6B42A0071DD7A /* Assets.xcassets */,
+				8B7191C61EC6B42A0071DD7A /* Info.plist */,
+			);
+			path = "Mobile-Day-Impacta-Watch";
+			sourceTree = "<group>";
+		};
+		8B7191CF1EC6B42A0071DD7A /* Mobile-Day-Impacta-Watch Extension */ = {
+			isa = PBXGroup;
+			children = (
+				8B7191D21EC6B42A0071DD7A /* InterfaceController.swift */,
+				8B7191D41EC6B42A0071DD7A /* ExtensionDelegate.swift */,
+				8B7191D61EC6B42A0071DD7A /* NotificationController.swift */,
+				8B7191D81EC6B42A0071DD7A /* Assets.xcassets */,
+				8B7191DA1EC6B42A0071DD7A /* Info.plist */,
+				8B7191D01EC6B42A0071DD7A /* Supporting Files */,
+			);
+			path = "Mobile-Day-Impacta-Watch Extension";
+			sourceTree = "<group>";
+		};
+		8B7191D01EC6B42A0071DD7A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8B7191D11EC6B42A0071DD7A /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8B7191E61EC70B260071DD7A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8B7191E91EC70B3B0071DD7A /* WatchConnectivity.framework */,
+				8B7191E71EC70B270071DD7A /* WatchConnectivity.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,15 +193,51 @@
 				8B7191A41EC6B3EA0071DD7A /* Sources */,
 				8B7191A51EC6B3EA0071DD7A /* Frameworks */,
 				8B7191A61EC6B3EA0071DD7A /* Resources */,
+				8B7191E51EC6B42A0071DD7A /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				8B7191DC1EC6B42A0071DD7A /* PBXTargetDependency */,
 			);
 			name = "Mobile-Day-Impacta";
 			productName = "Mobile-Day-Impacta";
 			productReference = 8B7191A81EC6B3EA0071DD7A /* Mobile-Day-Impacta.app */;
 			productType = "com.apple.product-type.application";
+		};
+		8B7191BE1EC6B42A0071DD7A /* Mobile-Day-Impacta-Watch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8B7191E21EC6B42A0071DD7A /* Build configuration list for PBXNativeTarget "Mobile-Day-Impacta-Watch" */;
+			buildPhases = (
+				8B7191BD1EC6B42A0071DD7A /* Resources */,
+				8B7191E11EC6B42A0071DD7A /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8B7191CE1EC6B42A0071DD7A /* PBXTargetDependency */,
+			);
+			name = "Mobile-Day-Impacta-Watch";
+			productName = "Mobile-Day-Impacta-Watch";
+			productReference = 8B7191BF1EC6B42A0071DD7A /* Mobile-Day-Impacta-Watch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		8B7191CA1EC6B42A0071DD7A /* Mobile-Day-Impacta-Watch Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8B7191DE1EC6B42A0071DD7A /* Build configuration list for PBXNativeTarget "Mobile-Day-Impacta-Watch Extension" */;
+			buildPhases = (
+				8B7191C71EC6B42A0071DD7A /* Sources */,
+				8B7191C81EC6B42A0071DD7A /* Frameworks */,
+				8B7191C91EC6B42A0071DD7A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Mobile-Day-Impacta-Watch Extension";
+			productName = "Mobile-Day-Impacta-Watch Extension";
+			productReference = 8B7191CB1EC6B42A0071DD7A /* Mobile-Day-Impacta-Watch Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -95,6 +250,16 @@
 				ORGANIZATIONNAME = Ezequiel;
 				TargetAttributes = {
 					8B7191A71EC6B3EA0071DD7A = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 54JDK55DR5;
+						ProvisioningStyle = Automatic;
+					};
+					8B7191BE1EC6B42A0071DD7A = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 54JDK55DR5;
+						ProvisioningStyle = Automatic;
+					};
+					8B7191CA1EC6B42A0071DD7A = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 54JDK55DR5;
 						ProvisioningStyle = Automatic;
@@ -115,6 +280,8 @@
 			projectRoot = "";
 			targets = (
 				8B7191A71EC6B3EA0071DD7A /* Mobile-Day-Impacta */,
+				8B7191BE1EC6B42A0071DD7A /* Mobile-Day-Impacta-Watch */,
+				8B7191CA1EC6B42A0071DD7A /* Mobile-Day-Impacta-Watch Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -130,6 +297,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8B7191BD1EC6B42A0071DD7A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B7191C51EC6B42A0071DD7A /* Assets.xcassets in Resources */,
+				8B7191C31EC6B42A0071DD7A /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B7191C91EC6B42A0071DD7A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B7191D91EC6B42A0071DD7A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -142,7 +326,30 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8B7191C71EC6B42A0071DD7A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B7191D71EC6B42A0071DD7A /* NotificationController.swift in Sources */,
+				8B7191D51EC6B42A0071DD7A /* ExtensionDelegate.swift in Sources */,
+				8B7191D31EC6B42A0071DD7A /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8B7191CE1EC6B42A0071DD7A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8B7191CA1EC6B42A0071DD7A /* Mobile-Day-Impacta-Watch Extension */;
+			targetProxy = 8B7191CD1EC6B42A0071DD7A /* PBXContainerItemProxy */;
+		};
+		8B7191DC1EC6B42A0071DD7A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8B7191BE1EC6B42A0071DD7A /* Mobile-Day-Impacta-Watch */;
+			targetProxy = 8B7191DB1EC6B42A0071DD7A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		8B7191AF1EC6B3EA0071DD7A /* Main.storyboard */ = {
@@ -159,6 +366,14 @@
 				8B7191B51EC6B3EA0071DD7A /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		8B7191C11EC6B42A0071DD7A /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8B7191C21EC6B42A0071DD7A /* Base */,
+			);
+			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -281,6 +496,76 @@
 			};
 			name = Release;
 		};
+		8B7191DF1EC6B42A0071DD7A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				DEVELOPMENT_TEAM = 54JDK55DR5;
+				INFOPLIST_FILE = "Mobile-Day-Impacta-Watch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ezefranca.Mobile-Day-Impacta.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Debug;
+		};
+		8B7191E01EC6B42A0071DD7A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				DEVELOPMENT_TEAM = 54JDK55DR5;
+				INFOPLIST_FILE = "Mobile-Day-Impacta-Watch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ezefranca.Mobile-Day-Impacta.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Release;
+		};
+		8B7191E31EC6B42A0071DD7A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 54JDK55DR5;
+				IBSC_MODULE = Mobile_Day_Impacta_Watch_Extension;
+				INFOPLIST_FILE = "Mobile-Day-Impacta-Watch/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ezefranca.Mobile-Day-Impacta.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Debug;
+		};
+		8B7191E41EC6B42A0071DD7A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 54JDK55DR5;
+				IBSC_MODULE = Mobile_Day_Impacta_Watch_Extension;
+				INFOPLIST_FILE = "Mobile-Day-Impacta-Watch/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ezefranca.Mobile-Day-Impacta.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -298,6 +583,22 @@
 			buildConfigurations = (
 				8B7191BB1EC6B3EA0071DD7A /* Debug */,
 				8B7191BC1EC6B3EA0071DD7A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		8B7191DE1EC6B42A0071DD7A /* Build configuration list for PBXNativeTarget "Mobile-Day-Impacta-Watch Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B7191DF1EC6B42A0071DD7A /* Debug */,
+				8B7191E01EC6B42A0071DD7A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		8B7191E21EC6B42A0071DD7A /* Build configuration list for PBXNativeTarget "Mobile-Day-Impacta-Watch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B7191E31EC6B42A0071DD7A /* Debug */,
+				8B7191E41EC6B42A0071DD7A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};

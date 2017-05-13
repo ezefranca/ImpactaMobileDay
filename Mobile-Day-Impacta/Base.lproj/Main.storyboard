@@ -1,14 +1,19 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Mobile_Day_Impacta" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +21,52 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="app" translatesAutoresizingMaskIntoConstraints="NO" id="Jkm-a5-ZLA">
+                                <rect key="frame" x="16" y="84" width="343" height="210"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🐼" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jOH-f2-4KP">
+                                <rect key="frame" x="155" y="298" width="65" height="72"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Woa-xv-d3o">
+                                <rect key="frame" x="55" y="629" width="264" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="lT6-Cx-dGC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Atualizar Título"/>
+                                <connections>
+                                    <action selector="sendNumerOfAnimals:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3vN-74-uhX"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Jkm-a5-ZLA" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="64" id="6lx-5o-u5q"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Woa-xv-d3o" secondAttribute="bottom" constant="8" symbolic="YES" id="94B-H3-Glh"/>
+                            <constraint firstItem="jOH-f2-4KP" firstAttribute="centerX" secondItem="Woa-xv-d3o" secondAttribute="centerX" id="Io6-Jp-aS5"/>
+                            <constraint firstItem="Woa-xv-d3o" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="39" id="Jiz-zi-0xs"/>
+                            <constraint firstItem="Jkm-a5-ZLA" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="NNH-WK-NHs"/>
+                            <constraint firstItem="jOH-f2-4KP" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ORu-px-Cn7"/>
+                            <constraint firstItem="jOH-f2-4KP" firstAttribute="top" secondItem="Jkm-a5-ZLA" secondAttribute="bottom" constant="4" id="UIA-Z9-3FR"/>
+                            <constraint firstItem="Jkm-a5-ZLA" firstAttribute="centerX" secondItem="jOH-f2-4KP" secondAttribute="centerX" id="j4o-Iv-lyz"/>
+                            <constraint firstItem="Jkm-a5-ZLA" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="si5-qi-LyM"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="savedAnimalLabel" destination="jOH-f2-4KP" id="QMs-vK-wuu"/>
+                        <outlet property="updateTitle" destination="Woa-xv-d3o" id="PqG-Gw-ChV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="app" width="105" height="115"/>
+    </resources>
 </document>

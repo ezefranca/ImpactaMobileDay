@@ -4,6 +4,16 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Mobile-Day-Impacta-Watch (Notification).xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+		<key>Mobile-Day-Impacta-Watch.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 		<key>Mobile-Day-Impacta.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -13,6 +23,11 @@
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>8B7191A71EC6B3EA0071DD7A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>8B7191BE1EC6B42A0071DD7A</key>
 		<dict>
 			<key>primary</key>
 			<true/>
